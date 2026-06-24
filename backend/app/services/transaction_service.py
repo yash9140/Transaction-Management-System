@@ -262,3 +262,5 @@ def process_transaction(
         "userId": user_id,
         "amount": amount,
     }
+
+# Refactored: all business logic isolated in service layer; router is thin.

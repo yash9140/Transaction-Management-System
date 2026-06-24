@@ -57,3 +57,5 @@ def get_ranking(db: Session) -> List[Dict[str, Any]]:
         })
 
     return ranking
+
+# Refactored: ranking logic fully isolated from router layer.
