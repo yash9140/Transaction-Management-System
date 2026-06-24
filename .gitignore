@@ -1,0 +1,63 @@
+# .gitignore for Transaction-Leaderboard-System / RankFlow
+
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env.local
+
+# SQLite database (local dev artifact)
+*.db
+*.sqlite
+*.sqlite3
+
+# Alembic versions (if auto-generated, commit manually)
+# alembic/versions/
+
+# ── Node / Frontend ──────────────────────────────────────
+node_modules/
+.npm
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite build output
+dist/
+dist-ssr/
+*.local
+
+# ── IDEs & Editors ───────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Environment files (keep .env.example, not actual secrets) ──
+# backend uses os.getenv, no .env file needed
+# frontend .env is committed as it only contains public VITE_ vars
+# .env.production — do NOT commit
+*.env.production
+.env.secret
+
+# ── Misc ─────────────────────────────────────────────────
+.coverage
+htmlcov/
+.pytest_cache/
