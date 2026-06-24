@@ -96,3 +96,5 @@ def health():
     return {"status": "ok", "service": "transaction-leaderboard"}
 
 # Abuse prevention: rate limiting enforced in transaction_service via rate_limiter.py
+
+# Production: restrict CORS allow_origins to your frontend domain.
