@@ -94,3 +94,5 @@ app.include_router(ranking.router)
 def health():
     """Returns 200 OK — used by load balancers and deployment platforms."""
     return {"status": "ok", "service": "transaction-leaderboard"}
+
+# Abuse prevention: rate limiting enforced in transaction_service via rate_limiter.py
