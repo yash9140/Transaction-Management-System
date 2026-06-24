@@ -73,3 +73,5 @@ class Transaction(Base):
     __table_args__ = (
         UniqueConstraint("transaction_id", name="uq_transaction_id"),
     )
+
+# Duplicate prevention enforced at DB level via UniqueConstraint on transaction_id.
