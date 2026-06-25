@@ -174,7 +174,7 @@ Submit a new financial transaction. Idempotent — safe to retry with the same `
 
 ## 7. Database Design
 
-### `users` table
+### users table
 
 | Column | Type | Constraints | Notes |
 |--------|------|-------------|-------|
